@@ -290,6 +290,70 @@ footer{background:var(--blue-deeper);color:#fff;padding:60px 5% 30px;}
   .hero-btns{justify-content:center;}
 }
 @media(max-width:480px){.ach-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:480px){
+  .ach-grid{grid-template-columns:1fr 1fr;}
+}
+
+/* CASE STUDIES */
+#case-studies{
+    background: var(--gray-100);
+}
+
+.case-study{
+    background:#fff;
+    border:1.5px solid var(--gray-200);
+    border-radius:var(--radius);
+    padding:32px;
+    max-width:800px;
+    transition:var(--transition);
+}
+  .case-study:hover{
+    border-color:var(--blue-pro);
+    box-shadow:var(--shadow-md);
+    transform:translateY(-4px);
+}
+
+.case-icon{
+    width:60px;
+    height:60px;
+    background:var(--blue-light);
+    color:var(--blue-pro);
+    border-radius:14px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+    margin-bottom:20px;
+}
+
+.case-study h3{
+    font-family:var(--font-head);
+    color:var(--gray-900);
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+.case-study p{
+    color:var(--gray-500);
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.case-study ul{
+    list-style:none;
+    padding:0;
+}
+
+.case-study ul li{
+    padding:10px 0;
+    border-bottom:1px solid var(--gray-200);
+    color:var(--gray-700);
+    font-size:14px;
+}
+.case-study ul li:last-child{
+    border-bottom:none;
+}
+
 </style>
 </head>
 <body>
