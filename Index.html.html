@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Barkha Sharma | Email Marketing & Marketing Automation Expert</title>
+<meta name="description" content="Barkha Sharma – Senior Email Marketing & Marketing Automation Specialist with 7.5+ years of experience. Expert in SFMC, HubSpot, CRM Journeys, Google & Meta Ads."/>
+<meta name="keywords" content="Email Marketing, Marketing Automation, SFMC, HubSpot, CRM, Lead Generation, Barkha Sharma, Noida"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<style>
+:root {
+  --blue-light: #EAF4FF;
+  --blue-pro: #0A66C2;
+  --blue-dark: #074f9e;
+  --blue-deeper: #052d5a;
+  --orange: #FF7A00;
+  --orange-light: #FFF3E8;
+  --white: #FFFFFF;
+  --gray-100: #F8FAFC;
+  --gray-200: #E2E8F0;
+  --gray-500: #64748B;
+  --gray-700: #334155;
+  --gray-900: #0F172A;
+  --font-head: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --radius: 16px;
+  --shadow-sm: 0 2px 8px rgba(10,102,194,0.08);
+  --shadow-md: 0 8px 32px rgba(10,102,194,0.12);
+  --shadow-lg: 0 20px 60px rgba(10,102,194,0.16);
+  --transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--font-body);color:var(--gray-700);background:var(--white);overflow-x:hidden;}
+
+/* SCROLLBAR */
+::-webkit-scrollbar{width:6px;}
+::-webkit-scrollbar-track{background:var(--blue-light);}
+::-webkit-scrollbar-thumb{background:var(--blue-pro);border-radius:3px;}
+
+/* LOADER */
+#loader{position:fixed;inset:0;background:var(--blue-deeper);display:flex;align-items:center;justify-content:center;z-index:9999;transition:opacity 0.5s ease;}
+#loader.hidden{opacity:0;pointer-events:none;}
+.loader-inner{text-align:center;}
+.loader-ring{width:60px;height:60px;border:3px solid rgba(255,255,255,0.2);border-top-color:#fff;border-radius:50%;animation:spin 0.8s linear infinite;margin:0 auto 16px;}
+.loader-text{color:#fff;font-family:var(--font-head);font-weight:600;letter-spacing:2px;font-size:14px;}
+@keyframes spin{to{transform:rotate(360deg);}}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 5%;transition:var(--transition);}
+nav.scrolled{background:rgba(255,255,255,0.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 1px 24px rgba(10,102,194,0.1);border-bottom:1px solid rgba(10,102,194,0.08);}
+.nav-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:72px;}
+.logo{font-family:var(--font-head);font-weight:700;font-size:22px;color:var(--blue-pro);text-decoration:none;letter-spacing:-0.5px;}
+.logo span{color:var(--orange);}
+.nav-links{display:flex;gap:8px;list-style:none;}
+.nav-links a{font-size:14px;font-weight:500;color:var(--gray-700);text-decoration:none;padding:8px 14px;border-radius:8px;transition:var(--transition);}
+.nav-links a:hover,.nav-links a.active{color:var(--blue-pro);background:var(--blue-light);}
+.nav-cta{background:var(--blue-pro);color:#fff!important;padding:10px 20px!important;border-radius:10px!important;}
+.nav-cta:hover{background:var(--orange)!important;color:#fff!important;}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;}
+.hamburger span{width:24px;height:2px;background:var(--gray-700);border-radius:2px;transition:var(--transition);}
+.mobile-menu{display:none;position:fixed;top:72px;left:0;right:0;background:rgba(255,255,255,0.97);backdrop-filter:blur(20px);padding:20px 5%;box-shadow:var(--shadow-md);z-index:999;}
+.mobile-menu.open{display:block;}
+.mobile-menu ul{list-style:none;display:flex;flex-direction:column;gap:4px;}
+.mobile-menu a{display:block;padding:12px 16px;color:var(--gray-700);text-decoration:none;font-weight:500;border-radius:8px;}
+.mobile-menu a:hover{background:var(--blue-light);color:var(--blue-pro);}
+
+/* HERO */
+#home{min-height:100vh;background:linear-gradient(135deg,var(--blue-deeper) 0%,var(--blue-pro) 50%,#0e7fde 100%);position:relative;overflow:hidden;display:flex;align-items:center;}
+.hero-bg-circles{position:absolute;inset:0;overflow:hidden;pointer-events:none;}
+.circle{position:absolute;border-radius:50%;background:rgba(255,255,255,0.04);}
+.c1{width:500px;height:500px;top:-150px;right:-100px;animation:float 8s ease-in-out infinite;}
+.c2{width:300px;height:300px;bottom:-50px;left:-80px;animation:float 10s ease-in-out infinite reverse;}
+.c3{width:200px;height:200px;top:40%;left:35%;animation:float 6s ease-in-out infinite 2s;}
+@keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-20px);}}
+.hero-inner{max-width:1280px;margin:0 auto;padding:120px 5% 80px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;width:100%;}
+.hero-left{color:#fff;}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.12);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.2);padding:8px 16px;border-radius:30px;font-size:13px;font-weight:500;color:#fff;margin-bottom:20px;}
+.hero-badge .dot{width:8px;height:8px;border-radius:50%;background:var(--orange);animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.4;}}
+.hero-greeting{font-size:18px;font-weight:400;opacity:0.85;margin-bottom:8px;font-family:var(--font-body);}
+.hero-name{font-family:var(--font-head);font-size:clamp(36px,5vw,64px);font-weight:800;line-height:1.05;letter-spacing:-1px;margin-bottom:16px;}
+.hero-name span{color:var(--orange);}
+.hero-title{font-family:var(--font-head);font-size:clamp(18px,2.5vw,28px);font-weight:600;opacity:0.9;margin-bottom:16px;line-height:1.3;}
+.hero-sub{font-size:15px;line-height:1.8;opacity:0.8;max-width:500px;margin-bottom:28px;}
+.hero-highlights{display:flex;flex-direction:column;gap:10px;margin-bottom:36px;}
+.hero-highlight{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:500;}
+.hero-highlight i{color:var(--orange);width:18px;}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;}
+.btn-primary{background:var(--orange);color:#fff;padding:14px 28px;border-radius:12px;text-decoration:none;font-weight:600;font-size:15px;transition:var(--transition);display:inline-flex;align-items:center;gap:8px;}
+.btn-primary:hover{background:#e06800;transform:translateY(-2px);box-shadow:0 8px 24px rgba(255,122,0,0.4);}
+.btn-outline{background:rgba(255,255,255,0.12);backdrop-filter:blur(10px);border:1.5px solid rgba(255,255,255,0.35);color:#fff;padding:14px 28px;border-radius:12px;text-decoration:none;font-weight:600;font-size:15px;transition:var(--transition);display:inline-flex;align-items:center;gap:8px;}
+.btn-outline:hover{background:rgba(255,255,255,0.22);transform:translateY(-2px);}
+.hero-right{position:relative;display:flex;justify-content:center;}
+.hero-photo-wrap{position:relative;width:360px;height:420px;}
+.hero-photo-bg{position:absolute;inset:0;border-radius:30px;background:linear-gradient(145deg,rgba(255,122,0,0.3),rgba(255,255,255,0.1));backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.2);}
+.hero-photo{position:absolute;inset:12px;border-radius:22px;overflow:hidden;background:linear-gradient(145deg,rgba(255,255,255,0.15),rgba(255,255,255,0.05));}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:top;}
+.hero-photo-placeholder{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;color:rgba(255,255,255,0.6);}
+.hero-photo-placeholder i{font-size:80px;margin-bottom:12px;opacity:0.5;}
+.hero-photo-placeholder p{font-size:13px;opacity:0.6;}
+.exp-badge{position:absolute;bottom:-20px;left:-30px;background:#fff;border-radius:16px;padding:14px 20px;box-shadow:var(--shadow-lg);display:flex;align-items:center;gap:12px;}
+.exp-badge .num{font-family:var(--font-head);font-size:28px;font-weight:800;color:var(--blue-pro);line-height:1;}
+.exp-badge .label{font-size:12px;color:var(--gray-500);font-weight:500;line-height:1.4;}
+.float-cards{position:absolute;top:-20px;right:-30px;display:flex;flex-direction:column;gap:10px;}
+.float-card{background:rgba(255,255,255,0.14);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.25);border-radius:12px;padding:10px 14px;display:flex;align-items:center;gap:10px;color:#fff;font-size:13px;font-weight:500;animation:float 5s ease-in-out infinite;}
+.float-card:nth-child(2){animation-delay:1s;}
+.float-card:nth-child(3){animation-delay:2s;}
+.float-card:nth-child(4){animation-delay:3s;}
+.float-card i{color:var(--orange);width:16px;}
+
+/* SECTIONS */
+section{padding:90px 5%;}
+.section-inner{max-width:1280px;margin:0 auto;}
+.section-label{display:inline-block;background:var(--blue-light);color:var(--blue-pro);font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:6px 14px;border-radius:20px;margin-bottom:12px;}
+.section-title{font-family:var(--font-head);font-size:clamp(28px,4vw,42px);font-weight:700;color:var(--gray-900);line-height:1.2;margin-bottom:16px;}
+.section-title span{color:var(--blue-pro);}
+.section-sub{font-size:16px;color:var(--gray-500);max-width:560px;line-height:1.7;}
+.section-head{margin-bottom:52px;}
+
+/* ABOUT */
+#about{background:var(--gray-100);}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+.about-img-wrap{position:relative;}
+.about-img-card{background:linear-gradient(135deg,var(--blue-pro),#0e7fde);border-radius:24px;padding:40px;color:#fff;text-align:center;}
+.about-img-card i{font-size:80px;opacity:0.3;margin-bottom:16px;}
+.about-img-card .name{font-family:var(--font-head);font-size:22px;font-weight:700;margin-bottom:6px;}
+.about-img-card .role{font-size:14px;opacity:0.8;}
+.about-stat-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px;}
+.about-stat{background:rgba(255,255,255,0.12);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.2);border-radius:14px;padding:16px;text-align:center;}
+.about-stat .val{font-family:var(--font-head);font-size:24px;font-weight:700;color:#fff;}
+.about-stat .lbl{font-size:11px;opacity:0.75;margin-top:4px;}
+.about-content p{font-size:16px;line-height:1.8;color:var(--gray-700);margin-bottom:18px;}
+.industry-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px;}
+.tag{background:var(--blue-light);color:var(--blue-pro);font-size:13px;font-weight:500;padding:6px 14px;border-radius:20px;}
+
+/* EXPERTISE */
+#expertise{background:var(--white);}
+.expertise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.expertise-card{background:var(--white);border:1.5px solid var(--gray-200);border-radius:var(--radius);padding:28px;transition:var(--transition);cursor:default;}
+.expertise-card:hover{border-color:var(--blue-pro);box-shadow:var(--shadow-md);transform:translateY(-4px);}
+.expertise-card:hover .exp-icon{background:var(--blue-pro);color:#fff;}
+.exp-icon{width:52px;height:52px;border-radius:12px;background:var(--blue-light);color:var(--blue-pro);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:18px;transition:var(--transition);}
+.expertise-card h3{font-family:var(--font-head);font-size:17px;font-weight:600;color:var(--gray-900);margin-bottom:12px;}
+.expertise-card ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.expertise-card ul li{font-size:13.5px;color:var(--gray-500);display:flex;align-items:center;gap:7px;}
+.expertise-card ul li::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--orange);flex-shrink:0;}
+
+/* TOOLS */
+#tools{background:var(--gray-100);}
+.tools-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;}
+.tools-category{background:var(--white);border-radius:var(--radius);padding:28px;border:1.5px solid var(--gray-200);}
+.tools-category h3{font-family:var(--font-head);font-size:16px;font-weight:600;color:var(--gray-900);margin-bottom:18px;display:flex;align-items:center;gap:10px;}
+.tools-category h3 i{color:var(--blue-pro);}
+.tools-tags{display:flex;flex-wrap:wrap;gap:8px;}
+.tool-tag{background:var(--blue-light);color:var(--blue-pro);font-size:13px;font-weight:500;padding:6px 14px;border-radius:8px;transition:var(--transition);}
+.tool-tag:hover{background:var(--blue-pro);color:#fff;}
+
+/* WORKFLOW */
+#workflow{background:var(--white);}
+.workflow-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;}
+.workflow-card{background:linear-gradient(135deg,var(--blue-light) 0%,#fff 100%);border:1.5px solid var(--gray-200);border-radius:var(--radius);padding:32px;}
+.workflow-card h3{font-family:var(--font-head);font-size:17px;font-weight:600;color:var(--blue-pro);margin-bottom:24px;}
+.flow-steps{display:flex;flex-direction:column;gap:0;}
+.flow-step{display:flex;align-items:center;gap:14px;padding:10px 0;}
+.flow-step-icon{width:40px;height:40px;border-radius:10px;background:var(--blue-pro);color:#fff;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;}
+.flow-step-label{font-size:14px;font-weight:500;color:var(--gray-700);}
+.flow-arrow{margin-left:12px;color:var(--blue-pro);font-size:18px;opacity:0.5;padding:0 0 0 14px;}
+
+/* ACHIEVEMENTS */
+#achievements{background:linear-gradient(135deg,var(--blue-deeper),var(--blue-pro));}
+.ach-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:24px;}
+.ach-card{text-align:center;color:#fff;padding:28px 20px;}
+.ach-num{font-family:var(--font-head);font-size:clamp(36px,4vw,52px);font-weight:800;color:#fff;line-height:1;margin-bottom:8px;}
+.ach-num span{color:var(--orange);}
+.ach-label{font-size:13px;opacity:0.8;line-height:1.4;}
+.ach-icon{font-size:28px;color:rgba(255,255,255,0.3);margin-bottom:12px;}
+
+/* EXPERIENCE */
+#experience{background:var(--gray-100);}
+.timeline{position:relative;padding-left:0;}
+.timeline-item{display:grid;grid-template-columns:200px 40px 1fr;gap:0;margin-bottom:0;}
+.timeline-date{text-align:right;padding:24px 24px 24px 0;color:var(--blue-pro);font-weight:600;font-size:13px;line-height:1.4;}
+.timeline-dot-col{display:flex;flex-direction:column;align-items:center;}
+.timeline-dot{width:14px;height:14px;border-radius:50%;background:var(--blue-pro);border:3px solid var(--white);box-shadow:0 0 0 2px var(--blue-pro);margin-top:30px;flex-shrink:0;}
+.timeline-line{width:2px;flex:1;background:linear-gradient(var(--blue-pro),var(--gray-200));min-height:20px;}
+.timeline-item:last-child .timeline-line{display:none;}
+.timeline-content{padding:20px 0 36px 24px;}
+.timeline-card{background:var(--white);border:1.5px solid var(--gray-200);border-radius:var(--radius);padding:22px 24px;transition:var(--transition);}
+.timeline-card:hover{border-color:var(--blue-pro);box-shadow:var(--shadow-sm);}
+.tl-role{font-family:var(--font-head);font-size:16px;font-weight:700;color:var(--gray-900);margin-bottom:4px;}
+.tl-company{font-size:14px;color:var(--blue-pro);font-weight:600;margin-bottom:10px;}
+.tl-desc{font-size:13.5px;color:var(--gray-500);line-height:1.7;}
+
+/* PROJECTS */
+#projects{background:var(--white);}
+.projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.project-card{background:var(--white);border:1.5px solid var(--gray-200);border-radius:var(--radius);padding:28px;transition:var(--transition);position:relative;overflow:hidden;}
+.project-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--blue-pro),var(--orange));transform:scaleX(0);transition:var(--transition);transform-origin:left;}
+.project-card:hover::before{transform:scaleX(1);}
+.project-card:hover{box-shadow:var(--shadow-md);transform:translateY(-4px);}
+.proj-icon{width:48px;height:48px;border-radius:12px;background:var(--blue-light);color:var(--blue-pro);display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:16px;}
+.project-card h3{font-family:var(--font-head);font-size:16px;font-weight:600;color:var(--gray-900);margin-bottom:10px;}
+.project-card p{font-size:13.5px;color:var(--gray-500);line-height:1.6;}
+.proj-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px;}
+.proj-tag{font-size:11px;padding:4px 10px;border-radius:6px;background:var(--orange-light);color:var(--orange);font-weight:600;}
+
+/* WHY HIRE ME */
+#why{background:var(--gray-100);}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.why-card{background:var(--white);border-radius:var(--radius);padding:28px;border:1.5px solid var(--gray-200);transition:var(--transition);}
+.why-card:hover{border-color:var(--orange);box-shadow:0 8px 32px rgba(255,122,0,0.1);transform:translateY(-4px);}
+.why-icon{width:52px;height:52px;border-radius:12px;background:var(--orange-light);color:var(--orange);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:18px;}
+.why-card h3{font-family:var(--font-head);font-size:16px;font-weight:600;color:var(--gray-900);margin-bottom:10px;}
+.why-card p{font-size:13.5px;color:var(--gray-500);line-height:1.6;}
+
+/* CONTACT */
+#contact{background:var(--white);}
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:60px;align-items:start;}
+.contact-info h3{font-family:var(--font-head);font-size:20px;font-weight:600;color:var(--gray-900);margin-bottom:8px;}
+.contact-info p{font-size:15px;color:var(--gray-500);line-height:1.7;margin-bottom:32px;}
+.contact-items{display:flex;flex-direction:column;gap:16px;}
+.contact-item{display:flex;align-items:center;gap:14px;}
+.contact-item-icon{width:44px;height:44px;border-radius:10px;background:var(--blue-light);color:var(--blue-pro);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.contact-item-text{font-size:14px;color:var(--gray-700);}
+.contact-item-text strong{display:block;color:var(--gray-900);font-weight:600;margin-bottom:2px;}
+.contact-form{background:var(--gray-100);border-radius:var(--radius);padding:32px;}
+.form-group{margin-bottom:18px;}
+.form-group label{display:block;font-size:13px;font-weight:600;color:var(--gray-700);margin-bottom:6px;}
+.form-group input,.form-group textarea{width:100%;padding:12px 16px;border:1.5px solid var(--gray-200);border-radius:10px;font-family:var(--font-body);font-size:14px;color:var(--gray-700);background:var(--white);transition:var(--transition);outline:none;}
+.form-group input:focus,.form-group textarea:focus{border-color:var(--blue-pro);box-shadow:0 0 0 3px rgba(10,102,194,0.1);}
+.form-group textarea{resize:vertical;min-height:120px;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.btn-submit{width:100%;background:var(--blue-pro);color:#fff;padding:14px;border-radius:10px;border:none;font-family:var(--font-body);font-size:15px;font-weight:600;cursor:pointer;transition:var(--transition);display:flex;align-items:center;justify-content:center;gap:8px;}
+.btn-submit:hover{background:var(--orange);transform:translateY(-2px);}
+.form-success{display:none;text-align:center;padding:20px;background:#ecfdf5;border-radius:10px;color:#065f46;font-weight:600;margin-top:14px;}
+
+/* FOOTER */
+footer{background:var(--blue-deeper);color:#fff;padding:60px 5% 30px;}
+.footer-inner{max-width:1280px;margin:0 auto;}
+.footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,0.1);}
+.footer-brand .logo-f{font-family:var(--font-head);font-size:22px;font-weight:700;color:#fff;margin-bottom:10px;}
+.footer-brand .logo-f span{color:var(--orange);}
+.footer-brand p{font-size:13.5px;opacity:0.7;line-height:1.7;max-width:280px;}
+.footer-col h4{font-family:var(--font-head);font-size:13px;font-weight:600;letter-spacing:1px;text-transform:uppercase;opacity:0.5;margin-bottom:16px;}
+.footer-col ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px;}
+.footer-col ul li a{font-size:13px;color:rgba(255,255,255,0.7);text-decoration:none;transition:var(--transition);}
+.footer-col ul li a:hover{color:var(--orange);}
+.footer-bottom{padding-top:28px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+.footer-bottom p{font-size:13px;opacity:0.5;}
+.social-links{display:flex;gap:10px;}
+.social-link{width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.7);display:flex;align-items:center;justify-content:center;text-decoration:none;transition:var(--transition);}
+.social-link:hover{background:var(--orange);color:#fff;}
+
+/* REVEAL ANIMATIONS */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity 0.6s ease,transform 0.6s ease;}
+.reveal.visible{opacity:1;transform:translateY(0);}
+.reveal-delay-1{transition-delay:0.1s;}
+.reveal-delay-2{transition-delay:0.2s;}
+.reveal-delay-3{transition-delay:0.3s;}
+.reveal-delay-4{transition-delay:0.4s;}
+.reveal-delay-5{transition-delay:0.5s;}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .hero-inner{grid-template-columns:1fr;text-align:center;}.hero-right{display:none;}
+  .about-grid{grid-template-columns:1fr;}.about-img-wrap{display:none;}
+  .expertise-grid{grid-template-columns:repeat(2,1fr);}
+  .ach-grid{grid-template-columns:repeat(3,1fr);}
+  .footer-top{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:768px){
+  .nav-links,.nav-cta-wrap{display:none;}
+  .hamburger{display:flex;}
+  section{padding:70px 5%;}
+  .expertise-grid{grid-template-columns:1fr;}
+  .tools-grid{grid-template-columns:1fr;}
+  .workflow-grid{grid-template-columns:1fr;}
+  .projects-grid{grid-template-columns:1fr;}
+  .why-grid{grid-template-columns:1fr;}
+  .contact-grid{grid-template-columns:1fr;}
+  .form-row{grid-template-columns:1fr;}
+  .ach-grid{grid-template-columns:repeat(2,1fr);}
+  .timeline-item{grid-template-columns:1fr;}
+  .timeline-date{display:none;}
+  .timeline-dot-col{display:none;}
+  .timeline-content{padding:0 0 20px 0;}
+  .footer-top{grid-template-columns:1fr;}
+  .hero-btns{justify-content:center;}
+}
+@media(max-width:480px){.ach-grid{grid-template-columns:1fr 1fr;}}
+</style>
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-ring"></div>
+    <div class="loader-text">BARKHA SHARMA</div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo">Barkha<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#expertise">Skills</a></li>
+      <li><a href="#tools">Tools</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#" class="nav-cta" onclick="alert('Please add your resume PDF link here!')"><i class="fas fa-download"></i> Resume</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#home" onclick="closeMenu()">Home</a></li>
+    <li><a href="#about" onclick="closeMenu()">About Me</a></li>
+    <li><a href="#expertise" onclick="closeMenu()">Skills</a></li>
+    <li><a href="#tools" onclick="closeMenu()">Tools</a></li>
+    <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
+    <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+    <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-bg-circles">
+    <div class="circle c1"></div>
+    <div class="circle c2"></div>
+    <div class="circle c3"></div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-badge"><span class="dot"></span> Available for Work — Noida, India</div>
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Barkha <span>Sharma</span></h1>
+      <p class="hero-title">Email Marketing &<br/>Marketing Automation Expert</p>
+      <p class="hero-sub">I help businesses grow through Email Marketing, SMS Marketing, CRM Automation, Marketing Automation, Lead Generation, and Performance Marketing.</p>
+      <div class="hero-highlights">
+        <div class="hero-highlight"><i class="fas fa-check-circle"></i> Salesforce Marketing Cloud Expert</div>
+        <div class="hero-highlight"><i class="fas fa-check-circle"></i> Email Automation Specialist</div>
+        <div class="hero-highlight"><i class="fas fa-check-circle"></i> CRM Journey Builder</div>
+        <div class="hero-highlight"><i class="fas fa-check-circle"></i> Google & Meta Ads Manager</div>
+      </div>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary"><i class="fas fa-envelope"></i> Contact Me</a>
+        <a href="#about" class="btn-outline"><i class="fas fa-user"></i> About Me</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-bg"></div>
+        <div class="hero-photo">
+          <div class="hero-photo-placeholder">
+            <i class="fas fa-user"></i>
+            <p>Add your photo here</p>
+          </div>
+        </div>
+        <div class="exp-badge">
+          <div class="num">7.5+</div>
+          <div class="label">Years<br/>Experience</div>
+        </div>
+      </div>
+      <div class="float-cards">
+        <div class="float-card"><i class="fas fa-envelope"></i> Email Campaigns</div>
+        <div class="float-card"><i class="fas fa-robot"></i> Marketing Automation</div>
+        <div class="float-card"><i class="fas fa-users"></i> Lead Generation</div>
+        <div class="float-card"><i class="fas fa-route"></i> CRM Journeys</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <div class="about-img-card">
+          <i class="fas fa-user-tie"></i>
+          <div class="name">Barkha Sharma</div>
+          <div class="role">Senior Email Marketing & Automation Specialist</div>
+          <div class="about-stat-cards">
+            <div class="about-stat"><div class="val">7.5+</div><div class="lbl">Years Exp.</div></div>
+            <div class="about-stat"><div class="val">1000+</div><div class="lbl">Campaigns</div></div>
+            <div class="about-stat"><div class="val">500+</div><div class="lbl">Journeys</div></div>
+            <div class="about-stat"><div class="val">20%+</div><div class="lbl">Avg. Open Rate ↑</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <div class="section-label">About Me</div>
+        <h2 class="section-title">Senior Email Marketing &<br/><span>Automation Specialist</span></h2>
+        <p>I am an Email Marketing and Marketing Automation Specialist with 7.5+ years of experience helping brands improve customer engagement and drive measurable business growth.</p>
+        <p>Currently working as Digital Marketing Specialist at <strong>Vinus Consulting</strong> (real estate, Delhi NCR) and associated with <strong>Vinus Global Media</strong> — a full-service digital marketing agency.</p>
+        <p>My expertise spans CRM journey building, automation workflows, audience segmentation, email deliverability, and performance marketing across Google and Meta platforms.</p>
+        <div class="industry-tags">
+          <span class="tag">Real Estate</span>
+          <span class="tag">Education</span>
+          <span class="tag">Banking & Finance</span>
+          <span class="tag">Travel</span>
+          <span class="tag">Gaming</span>
+          <span class="tag">E-commerce</span>
+          <span class="tag">EdTech</span>
+          <span class="tag">FinTech</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section id="expertise">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-label">My Expertise</div>
+      <h2 class="section-title">What I Do <span>Best</span></h2>
+      <p class="section-sub">From campaign execution to full-funnel automation — I cover the entire email marketing lifecycle.</p>
+    </div>
+    <div class="expertise-grid">
+      <div class="expertise-card reveal reveal-delay-1">
+        <div class="exp-icon"><i class="fas fa-envelope-open-text"></i></div>
+        <h3>Email Marketing</h3>
+        <ul>
+          <li>Campaign Management</li>
+          <li>Newsletter Marketing</li>
+          <li>A/B Testing</li>
+          <li>Audience Segmentation</li>
+          <li>Deliverability Optimization</li>
+        </ul>
+      </div>
+      <div class="expertise-card reveal reveal-delay-2">
+        <div class="exp-icon"><i class="fas fa-robot"></i></div>
+        <h3>Marketing Automation</h3>
+        <ul>
+          <li>Journey Builder (SFMC)</li>
+          <li>Automation Studio</li>
+          <li>CRM Workflows</li>
+          <li>Triggered Campaigns</li>
+          <li>Customer Lifecycle Marketing</li>
+        </ul>
+      </div>
+      <div class="expertise-card reveal reveal-delay-3">
+        <div class="exp-icon"><i class="fab fa-whatsapp"></i></div>
+        <h3>SMS & WhatsApp Marketing</h3>
+        <ul>
+          <li>Bulk SMS Campaigns</li>
+          <li>WhatsApp Campaigns</li>
+          <li>Customer Engagement</li>
+          <li>Automated Messaging</li>
+          <li>Multi-channel Sequences</li>
+        </ul>
+      </div>
+      <div class="expertise-card reveal reveal-delay-1">
+        <div class="exp-icon"><i class="fas fa-chart-line"></i></div>
+        <h3>Performance Marketing</h3>
+        <ul>
+          <li>Google Ads</li>
+          <li>Meta Ads (Facebook/Instagram)</li>
+          <li>LinkedIn Ads</li>
+          <li>YouTube Ads</li>
+          <li>Lead Generation</li>
+        </ul>
+      </div>
+      <div class="expertise-card reveal reveal-delay-2">
+        <div class="exp-icon"><i class="fas fa-handshake"></i></div>
+        <h3>CRM & Lead Management</h3>
+        <ul>
+          <li>Lead Scoring & Routing</li>
+          <li>Sales Pipeline Management</li>
+          <li>Contact Segmentation</li>
+          <li>Drip Nurturing Flows</li>
+          <li>CRM Integrations</li>
+        </ul>
+      </div>
+      <div class="expertise-card reveal reveal-delay-3">
+        <div class="exp-icon"><i class="fab fa-wordpress"></i></div>
+        <h3>WordPress & SEO</h3>
+        <ul>
+          <li>Landing Pages</li>
+          <li>Blog Publishing</li>
+          <li>On-Page SEO</li>
+          <li>Website Updates</li>
+          <li>Content Marketing</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section id="tools">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-label">Tools & Platforms</div>
+      <h2 class="section-title">My <span>Tech Stack</span></h2>
+      <p class="section-sub">Proficient in 20+ marketing tools across email, advertising, analytics, and AI automation.</p>
+    </div>
+    <div class="tools-grid">
+      <div class="tools-category reveal reveal-delay-1">
+        <h3><i class="fas fa-envelope"></i> Email Marketing Tools</h3>
+        <div class="tools-tags">
+          <span class="tool-tag">Salesforce Marketing Cloud</span>
+          <span class="tool-tag">HubSpot</span>
+          <span class="tool-tag">MoEngage</span>
+          <span class="tool-tag">WebEngage</span>
+          <span class="tool-tag">Zoho Campaigns</span>
+          <span class="tool-tag">Maropost</span>
+          <span class="tool-tag">Iterable</span>
+          <span class="tool-tag">iPost</span>
+          <span class="tool-tag">Campaigner</span>
+          <span class="tool-tag">Mailchimp</span>
+        </div>
+      </div>
+      <div class="tools-category reveal reveal-delay-2">
+        <h3><i class="fas fa-bullseye"></i> Advertising Tools</h3>
+        <div class="tools-tags">
+          <span class="tool-tag">Google Ads</span>
+          <span class="tool-tag">Meta Ads</span>
+          <span class="tool-tag">LinkedIn Ads</span>
+          <span class="tool-tag">YouTube Ads</span>
+          <span class="tool-tag">Google Tag Manager</span>
+        </div>
+      </div>
+      <div class="tools-category reveal reveal-delay-1">
+        <h3><i class="fas fa-chart-bar"></i> Analytics & Reporting</h3>
+        <div class="tools-tags">
+          <span class="tool-tag">Google Analytics 4</span>
+          <span class="tool-tag">Google Search Console</span>
+          <span class="tool-tag">Google Tag Manager</span>
+          <span class="tool-tag">Tableau</span>
+          <span class="tool-tag">Google Sheets</span>
+        </div>
+      </div>
+      <div class="tools-category reveal reveal-delay-2">
+        <h3><i class="fas fa-brain"></i> AI & Automation Tools</h3>
+        <div class="tools-tags">
+          <span class="tool-tag">Claude AI</span>
+          <span class="tool-tag">ChatGPT</span>
+          <span class="tool-tag">Gemini</span>
+          <span class="tool-tag">Perplexity</span>
+          <span class="tool-tag">n8n</span>
+          <span class="tool-tag">Canva</span>
+          <span class="tool-tag">LM Arena</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORKFLOW -->
+<section id="workflow">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-label">Automation Workflows</div>
+      <h2 class="section-title">How I Build <span>Customer Journeys</span></h2>
+    </div>
+    <div class="workflow-grid">
+      <div class="workflow-card reveal reveal-delay-1">
+        <h3><i class="fas fa-route"></i> Lead Nurturing Flow</h3>
+        <div class="flow-steps">
+          <div class="flow-step"><div class="flow-step-icon"><i class="fas fa-wpforms"></i></div><div class="flow-step-label">Lead Form Submission</div></div>
+          <div class="flow-arrow"><i class="fas fa-arrow-down"></i></div>
+          <div class="flow-step"><div class="flow-step-icon"><i class="fas fa-database"></i></div><div class="flow-step-label">CRM Entry & Lead Scoring</div></div>
+          <div class="flow-arrow"><i class="fas fa-arrow-down"></i></div>
+          <div class="flow-step"><div class="flow-step-icon"><i class="fas fa-envelope"></i></div><div class="flow-step-label">Email Automation Triggered</div></div>
+          <div class="flow-arrow"><i class="fas fa-arrow-down"></i></div>
+          <div class="flow-step"><div class="flow-step-icon"><i class="fas fa-sms"></i></div><div class="flow-step-label">SMS / WhatsApp Follow-up</div></div>
+          <div class="flow-arrow"><i class="fas fa-arrow-down"></i></div>
+          <div class="flow-step"><div class="flow-step-icon"><i class="fas fa-check-circle"></i></div><div class="flow-step-label">Conversion & Handoff to Sales</div></div>
+        </div>
+      </div>
+      <div class="workflow-card reveal reveal-delay-2">
+        <h3><i class="fas fa-project-diagram"></i> SFMC Journey Builder Flow</h3>
+        <div class="flow-steps">
+          <div class="flow-step"><div class="flow-step-icon"><i class="fas fa-globe"></i></div><div class="flow-step-label">Website Visitor / Ad Click</div></div>
+          <div class="flow-arrow"><i class="fas fa-arrow-down"></i></div>
+          <div class="flow-step"><div class="flow-step-icon"><i class="fas fa-funnel-dollar"></i></div><div class="flow-step-label">Lead Capture Page</div></div>
+          <div class="flow-arrow"><i class="fas fa-arrow-down"></i></div>
+          <div class="flow-step"><div class="flow-step-icon"><i class="fas fa-cloud"></i></div><div class="flow-step-label">SFMC / HubSpot Sync</div></div>
+          <div class="flow-arrow"><i class="fas fa-arrow-down"></i></div>
+          <div class="flow-step"><div class="flow-step-icon"><i class="fas fa-code-branch"></i></div><div class="flow-step-label">Journey Builder — Decision Split</div></div>
+          <div class="flow-arrow"><i class="fas fa-arrow-down"></i></div>
+          <div class="flow-step"><div class="flow-step-icon"><i class="fas fa-trophy"></i></div><div class="flow-step-label">Sales Conversion</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="section-inner">
+    <div class="ach-grid">
+      <div class="ach-card reveal reveal-delay-1">
+        <div class="ach-icon"><i class="fas fa-calendar-alt"></i></div>
+        <div class="ach-num" data-target="7" data-suffix=".5+">0</div>
+        <div class="ach-label">Years of Experience</div>
+      </div>
+      <div class="ach-card reveal reveal-delay-2">
+        <div class="ach-icon"><i class="fas fa-paper-plane"></i></div>
+        <div class="ach-num" data-target="1000" data-suffix="+">0</div>
+        <div class="ach-label">Email Campaigns Managed</div>
+      </div>
+      <div class="ach-card reveal reveal-delay-3">
+        <div class="ach-icon"><i class="fas fa-route"></i></div>
+        <div class="ach-num" data-target="500" data-suffix="+">0</div>
+        <div class="ach-label">Automation Journeys Built</div>
+      </div>
+      <div class="ach-card reveal reveal-delay-4">
+        <div class="ach-icon"><i class="fas fa-arrow-trend-up"></i></div>
+        <div class="ach-num" data-target="20" data-suffix="%+">0</div>
+        <div class="ach-label">Avg. Open Rate Improvement</div>
+      </div>
+      <div class="ach-card reveal reveal-delay-5">
+        <div class="ach-icon"><i class="fas fa-industry"></i></div>
+        <div class="ach-num" data-target="8" data-suffix="+">0</div>
+        <div class="ach-label">Industries Served</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-label">Work Experience</div>
+      <h2 class="section-title">My Professional <span>Journey</span></h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-date">2022 — Present</div>
+        <div class="timeline-dot-col"><div class="timeline-dot"></div><div class="timeline-line"></div></div>
+        <div class="timeline-content">
+          <div class="timeline-card">
+            <div class="tl-role">Senior Digital Marketing Specialist</div>
+            <div class="tl-company">Vinus Consulting | Noida, India</div>
+            <div class="tl-desc">Leading digital marketing for a real estate channel partner in Delhi NCR. Responsible for lead generation, CRM & lead management, email and WhatsApp marketing, Google & Meta advertising, customer journey automation, and marketing analytics for residential, commercial, luxury, and investment properties.</div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item reveal reveal-delay-1">
+        <div class="timeline-date">2020 — 2022</div>
+        <div class="timeline-dot-col"><div class="timeline-dot"></div><div class="timeline-line"></div></div>
+        <div class="timeline-content">
+          <div class="timeline-card">
+            <div class="tl-role">Senior Email Marketing Specialist</div>
+            <div class="tl-company">OrangeMonke</div>
+            <div class="tl-desc">Managed large-scale email marketing programs using Salesforce Marketing Cloud. Built complex automation journeys, implemented AMPscript personalization, and led deliverability optimization initiatives across multiple client accounts.</div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item reveal reveal-delay-2">
+        <div class="timeline-date">2018 — 2020</div>
+        <div class="timeline-dot-col"><div class="timeline-dot"></div><div class="timeline-line"></div></div>
+        <div class="timeline-content">
+          <div class="timeline-card">
+            <div class="tl-role">Assistant Email Marketing Specialist</div>
+            <div class="tl-company">OPK E Service Pvt. Ltd.</div>
+            <div class="tl-desc">Handled email campaign execution, audience segmentation, A/B testing, and performance reporting. Worked across education, banking, and e-commerce verticals to improve open rates and engagement.</div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item reveal reveal-delay-3">
+        <div class="timeline-date">2017 — 2018</div>
+        <div class="timeline-dot-col"><div class="timeline-dot"></div><div class="timeline-line"></div></div>
+        <div class="timeline-content">
+          <div class="timeline-card">
+            <div class="tl-role">Digital Marketing Coordinator</div>
+            <div class="tl-company">Square Yards</div>
+            <div class="tl-desc">Coordinated digital marketing campaigns for one of India's leading real estate platforms. Managed email campaigns, lead nurturing workflows, and cross-channel marketing initiatives.</div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item reveal reveal-delay-4">
+        <div class="timeline-date">2015 — 2017</div>
+        <div class="timeline-dot-col"><div class="timeline-dot"></div><div class="timeline-line"></div></div>
+        <div class="timeline-content">
+          <div class="timeline-card">
+            <div class="tl-role">Email Marketing Executive</div>
+            <div class="tl-company">Way2Online</div>
+            <div class="tl-desc">Started career in email marketing — executed bulk email campaigns, managed subscriber lists, tracked delivery and engagement metrics, and supported performance marketing initiatives.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="section-label">Projects</div>
+      <h2 class="section-title">Featured <span>Work</span></h2>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card reveal reveal-delay-1">
+        <div class="proj-icon"><i class="fas fa-route"></i></div>
+        <h3>SFMC Customer Journey Automation</h3>
+        <p>Built multi-stage customer journey in Salesforce Marketing Cloud using Journey Builder, AMPscript personalization, and behavioral decision splits for a real estate client.</p>
+        <div class="proj-tags"><span class="proj-tag">SFMC</span><span class="proj-tag">AMPscript</span><span class="proj-tag">Journey Builder</span></div>
+      </div>
+      <div class="project-card reveal reveal-delay-2">
+        <div class="proj-icon"><i class="fas fa-magnet"></i></div>
+        <h3>HubSpot Lead Nurturing Campaign</h3>
+        <p>Designed and executed a 30-day lead nurturing drip sequence for B2B clients using HubSpot Workflows, achieving 35% higher lead-to-meeting conversion rate.</p>
+        <div class="proj-tags"><span class="proj-tag">HubSpot</span><span class="proj-tag">Lead Nurture</span><span class="proj-tag">B2B</span></div>
+      </div>
+      <div class="project-card reveal reveal-delay-3">
+        <div class="proj-icon"><i class="fas fa-envelope-open-text"></i></div>
+        <h3>Email Newsletter Optimization</h3>
+        <p>Revamped email template design and content strategy for an EdTech client — increased open rates by 22% and CTR by 15% within 60 days through A/B testing and segmentation.</p>
+        <div class="proj-tags"><span class="proj-tag">A/B Testing</span><span class="proj-tag">EdTech</span><span class="proj-tag">Deliverability</span></div>
+      </div>
+      <div class="project-card reveal reveal-delay-1">
+        <div class="proj-icon"><i class="fas fa-ad"></i></div>
+        <h3>Google Ads Lead Generation</h3>
+        <p>Managed Google Search & Display campaigns for real estate projects in Delhi NCR — generated 500+ qualified leads per month with a CPL reduction of 30%.</p>
+        <div class="proj-tags"><span class="proj-tag">Google Ads</span><span class="proj-tag">Real Estate</span><span class="proj-tag">Lead Gen</span></div>
+      </div>
+      <div class="project-card reveal reveal-delay-2">
+        <div class="proj-icon"><i class="fas fa-cogs"></i></div>
+        <h3>n8n Marketing Automation Workflow</h3>
+        <p>Built cross-platform automation using n8n connecting Google Sheets, HubSpot CRM, and WhatsApp Business API for real-time lead routing and instant follow-up.</p>
+        <div class="proj-tags"><span class="proj-tag">n8n</span><span class="proj-tag">WhatsApp API</span><span class="proj-tag">HubSpot</span></div>
+      </div>
+      <div class="project-card reveal reveal-delay-3">
+        <div class="proj-icon"><i class="fas fa-users-cog"></i></div>
+        <h3>CRM Segmentation Project</h3>
+        <p>Created advanced contact segmentation strategy in Zoho CRM for a B2B client — 6 audience segments based on behavior, industry, and lead score to drive personalized outreach.</p>
+        <div class="proj-tags"><span class="proj-tag">Zoho CRM</span><span class="proj-tag">Segmentation</span><span class="proj-tag">B2B</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY HIRE ME -->
+<section id="why">
+  <div class="section-inner">
+    <div class="section-head reveal" style="text-align:center;">
+      <div class="section-label">Why Choose Me</div>
+      <h2 class="section-title">Why Hire <span>Barkha?</span></h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal reveal-delay-1">
+        <div class="why-icon"><i class="fas fa-chart-pie"></i></div>
+        <h3>Data-Driven Marketing</h3>
+        <p>Every campaign decision is backed by data — from segmentation logic to send-time optimization and A/B testing results.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-2">
+        <div class="why-icon"><i class="fas fa-envelope"></i></div>
+        <h3>Email Marketing Expert</h3>
+        <p>Deep hands-on experience across 10+ ESPs including SFMC, HubSpot, MoEngage, WebEngage, Maropost and more.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-3">
+        <div class="why-icon"><i class="fas fa-robot"></i></div>
+        <h3>Automation Specialist</h3>
+        <p>Built 500+ automation journeys that save time, reduce manual work, and dramatically improve conversion rates.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-1">
+        <div class="why-icon"><i class="fas fa-layer-group"></i></div>
+        <h3>Multi-Channel Marketing</h3>
+        <p>Combines email, SMS, WhatsApp, Google, and Meta into seamless omni-channel strategies that reach leads at every touchpoint.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-2">
+        <div class="why-icon"><i class="fas fa-bullseye"></i></div>
+        <h3>Performance Marketing</h3>
+        <p>Proven track record of generating high-quality leads at low CPL through optimized Google and Meta ad campaigns.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-3">
+        <div class="why-icon"><i class="fas fa-brain"></i></div>
+        <h3>AI-Powered Campaigns</h3>
+        <p>Leverages Claude AI, ChatGPT, and Gemini to accelerate content creation, campaign ideation, and workflow automation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="section-head reveal" style="text-align:center;">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title">Let's Work <span>Together</span></h2>
+      <p class="section-sub" style="margin:0 auto;">Ready to supercharge your email marketing? Let's connect and discuss how I can help grow your business.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal reveal-delay-1">
+        <h3>Barkha Sharma</h3>
+        <p>Email Marketing & Marketing Automation Expert | Noida, India</p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-item-text"><strong>Location</strong>Noida, Uttar Pradesh, India</div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+            <div class="contact-item-text"><strong>Phone</strong>+91 9911717266</div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-item-text"><strong>Email</strong>barkhasharma1749@gmail.com</div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fab fa-linkedin"></i></div>
+            <div class="contact-item-text"><strong>LinkedIn</strong><a href="https://www.linkedin.com/in/barkhaa-s-75770676/" target="_blank" style="color:var(--blue-pro);text-decoration:none;">linkedin.com/in/barkhaa-s-75770676</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-briefcase"></i></div>
+            <div class="contact-item-text"><strong>Agency</strong>vinusglobalmedia.com</div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form reveal reveal-delay-2">
+        <div class="form-row">
+          <div class="form-group"><label>Your Name</label><input type="text" id="cName" placeholder="Enter your name"/></div>
+          <div class="form-group"><label>Email Address</label><input type="email" id="cEmail" placeholder="Enter your email"/></div>
+        </div>
+        <div class="form-group"><label>Phone Number</label><input type="tel" id="cPhone" placeholder="Enter your phone number"/></div>
+        <div class="form-group"><label>Message</label><textarea id="cMessage" placeholder="Tell me about your project or requirements..."></textarea></div>
+        <button class="btn-submit" onclick="submitForm()"><i class="fas fa-paper-plane"></i> Send Message</button>
+        <div class="form-success" id="formSuccess">✅ Message sent successfully! I'll get back to you soon.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo-f">Barkha<span>.</span></div>
+        <p>Senior Email Marketing & Marketing Automation Specialist with 7.5+ years of experience. Based in Noida, India.</p>
+        <div class="social-links" style="margin-top:20px;">
+          <a href="https://www.linkedin.com/in/barkhaa-s-75770676/" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:barkhasharma1749@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+          <a href="https://vinusglobalmedia.com" target="_blank" class="social-link"><i class="fas fa-globe"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Specializations</h4>
+        <ul>
+          <li><a href="#">Email Marketing</a></li>
+          <li><a href="#">Marketing Automation</a></li>
+          <li><a href="#">SMS Marketing</a></li>
+          <li><a href="#">WhatsApp Marketing</a></li>
+          <li><a href="#">Google Ads</a></li>
+          <li><a href="#">Meta Ads</a></li>
+          <li><a href="#">LinkedIn Ads</a></li>
+          <li><a href="#">Lead Generation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Tools</h4>
+        <ul>
+          <li><a href="#">SFMC</a></li>
+          <li><a href="#">HubSpot</a></li>
+          <li><a href="#">MoEngage</a></li>
+          <li><a href="#">WebEngage</a></li>
+          <li><a href="#">Zoho</a></li>
+          <li><a href="#">Maropost</a></li>
+          <li><a href="#">n8n</a></li>
+          <li><a href="#">Claude AI</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Barkha Sharma. All Rights Reserved.</p>
+      <p style="opacity:0.4;font-size:12px;">Email Marketing & Marketing Automation Expert | Noida, India</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// LOADER
+window.addEventListener('load',()=>{
+  setTimeout(()=>{document.getElementById('loader').classList.add('hidden');},800);
+});
+
+// NAV SCROLL
+window.addEventListener('scroll',()=>{
+  const nav=document.getElementById('navbar');
+  nav.classList.toggle('scrolled',window.scrollY>40);
+  // active nav
+  const sections=document.querySelectorAll('section[id]');
+  const links=document.querySelectorAll('.nav-links a');
+  let current='';
+  sections.forEach(s=>{
+    if(window.scrollY>=s.offsetTop-100) current=s.getAttribute('id');
+  });
+  links.forEach(l=>{
+    l.classList.remove('active');
+    if(l.getAttribute('href')==='#'+current) l.classList.add('active');
+  });
+});
+
+// MOBILE MENU
+function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
+function closeMenu(){document.getElementById('mobileMenu').classList.remove('open');}
+
+// SCROLL REVEAL
+const observer=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');}});
+},{threshold:0.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+// COUNTER ANIMATION
+function animateCounter(el){
+  const target=parseFloat(el.dataset.target);
+  const suffix=el.dataset.suffix||'';
+  const duration=1800;
+  const step=target/duration*16;
+  let current=0;
+  const timer=setInterval(()=>{
+    current+=step;
+    if(current>=target){current=target;clearInterval(timer);}
+    el.textContent=Number.isInteger(target)?Math.floor(current)+suffix:current.toFixed(1)+suffix;
+  },16);
+}
+const counterObserver=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      animateCounter(e.target);
+      counterObserver.unobserve(e.target);
+    }
+  });
+},{threshold:0.5});
+document.querySelectorAll('.ach-num').forEach(el=>counterObserver.observe(el));
+
+// FORM
+function submitForm(){
+  const name=document.getElementById('cName').value.trim();
+  const email=document.getElementById('cEmail').value.trim();
+  const msg=document.getElementById('cMessage').value.trim();
+  if(!name||!email||!msg){alert('Please fill in Name, Email, and Message.');return;}
+  if(!/\S+@\S+\.\S+/.test(email)){alert('Please enter a valid email address.');return;}
+  document.getElementById('formSuccess').style.display='block';
+  document.getElementById('cName').value='';
+  document.getElementById('cEmail').value='';
+  document.getElementById('cPhone').value='';
+  document.getElementById('cMessage').value='';
+  setTimeout(()=>{document.getElementById('formSuccess').style.display='none';},5000);
+}
+
+// TYPING EFFECT in hero
+const titles=['Email Marketing Expert','Marketing Automation Specialist','CRM Journey Builder','Lead Generation Specialist'];
+let ti=0,ci=0,del=false;
+const typingEl=document.querySelector('.hero-title');
+if(typingEl){
+  function type(){
+    const cur=titles[ti];
+    if(!del){
+      typingEl.innerHTML=cur.substring(0,ci+1)+'<br/>& Automation Specialist<span style="border-right:2px solid #FF7A00;animation:blink 0.7s infinite">|</span>';
+      ci++;
+      if(ci===cur.length){del=true;setTimeout(type,2000);return;}
+    } else {
+      ci--;
+      typingEl.innerHTML=cur.substring(0,ci)+'<br/>& Automation Specialist<span style="border-right:2px solid #FF7A00">|</span>';
+      if(ci===0){del=false;ti=(ti+1)%titles.length;}
+    }
+    setTimeout(type,del?60:100);
+  }
+  setTimeout(type,1500);
+}
+</script>
+</body>
+</html>
